@@ -41,6 +41,8 @@ app.post("/contact-us", (req, res, next) => {
   next();
 });
 
+
+//handle encoding of the data
 app.use(bodyParser.urlencoded());
 
 app.post("/contact-us", (req, res, next) => {
